@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<a href="/">Show All Flights</a><br />
+
+<h2>Show All Flights</h2>
+
+Air Line :<span th:text="${course.departure}"></span><br />
+
+Departure :<span th:text="${course.departure}"></span><br />
+
+
+Destination :<span th:text="${course.departure}"></span><br />
+
+Date :<span th:text="${course.departure}"></span><br />
+
+Number :<span th:text="${course.departure}"></span><br />
+
+<a th:href="@{/delete/{id}(id=${course.id})}"Delete this course</a>
+
+
+
+</body>
+</html>
